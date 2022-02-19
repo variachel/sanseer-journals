@@ -1,0 +1,12 @@
+{
+	"sanseer-journals.SanseerJournal": "Sanseer Journal",
+	"sanseer-journals.DarkMode": "Dark Mode",
+	"sanseer-journals.StyleSection": "Custom Journal",
+	"sanseer-journals.DropCap": "Drop Cap",
+	"sanseer-journals.SimpleBlock": "Simple Block",
+	"sanseer-journals.SimpleBlockFloat": "Simple Block Float",
+	"sanseer-journals.RidgedBlock": "Ridged Block",
+	"sanseer-journals.RidgedBlockFloat": "Ridged Block Float",
+	"sanseer-journals.ImageJournal": "Custom Image",
+	"sanseer-journals.VideoJournal": "Custom Video"
+}

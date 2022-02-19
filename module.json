@@ -1,0 +1,41 @@
+{
+    "name": "sanseer-journals",
+    "title": "Sanseer Journals",
+    "description": "Custom journals for the world of Sanseer",
+    "version": "0.1.0",
+    "minimumCoreVersion": "9",
+    "compatibleCoreVersion": "9",
+    "author": "variachel",
+    "scripts": [],
+    "esmodules": [
+        "./scripts/sanseer-journals.js"
+    ],
+    "styles": [
+        "./styles/sanseer-journals.css",
+        "./styles/sanseer-image.css",
+        "./styles/sanseer-template-journal.css",
+        "./fonts/stylesheet.css"
+    ],
+    "languages": [
+    {
+        "lang": "en",
+        "name": "English",
+        "path": "lang/en.json"
+    }, ],
+    "packs": [],
+    "system": [],
+    "dependencies": [
+    {
+        "name": "lib-wrapper",
+        "manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/download/latest/module.json",
+        "type": "module"
+    }],
+    "socket": false,
+    "protected": false,
+    "coreTranslation": false,
+    "library": false,
+    "url": "https://github.com/variachel/sanseer-journals",
+    "issues": "https://github.com/variachel/sanseer-journals/issues",
+    "manifest": "https://github.com/variachel/sanseer-journals/releases/latest/download/module.json",
+    "download": "https://github.com/variachel/sanseer-journals/archive/v0.1.0.zip"
+}
