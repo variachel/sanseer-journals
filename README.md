@@ -13,4 +13,4 @@ It is primarily for my own personal use.
 
 ***
 
-![Object Journal Template](https://github.com/variachel/sanseer/blob/main/textures/object-template.jpg)
+![Object Journal Template](https://github.com/variachel/sanseer/raw/main/textures/object-template.jpg)
