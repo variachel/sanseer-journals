@@ -7,7 +7,7 @@ With respect to FairStrides Custom Journal on which it is based:
 
 Like any GM, I like to give my players as rich an experience as I can - the reason I am making the move to Foundry. I have many references / journals in game and I wanted those journals to align with my own game aesthetic. That, in itself, aligns with Foundry's own game UI and so I have created a theme and some templates that match that.
 
-There are still a number of things that require done to refine and polish it all.
+There are still a number of things that require done to refine and polish it all, for example nailing down the selectable styles (and adding to them).
 
 It is primarily for my own personal use.
 
@@ -23,3 +23,6 @@ It is primarily for my own personal use.
 
 ***
 
+##Issues
+
+- **Bug**: If the template has been created from the one of the sheets, unless you have made a further change to the content of the journal, updating the name of the journal entry will remove the content!
