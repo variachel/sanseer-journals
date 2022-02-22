@@ -23,6 +23,6 @@ It is primarily for my own personal use.
 
 ***
 
-##Issues
+## Issues
 
 - **Bug**: If the template has been created from the one of the sheets, unless you have made a further change to the content of the journal, updating the name of the journal entry will remove the content!
