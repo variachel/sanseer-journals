@@ -4,7 +4,8 @@ body {
     --sanseer-journals-button-hover-color: #d69e07;
     --sanseer-journals-folder-select-bg-color: #5c87b9;
     --sanseer-journals-header-text-color: #696969;
-    --sanseer-journals--base-text-color: #bfbfbf;
+    --sanseer-journals-base-text-color: #bfbfbf;
+    --sanseer-journals-color-shadow-highlight: #ff6400;
 }
 
 blockquote {
@@ -253,4 +254,23 @@ td img {
 .sanseer-journals section.secret {
     color: var(--sanseer-journals--base-text-color);
     background-color: #df94ee20;
+}
+
+.sanseer-journals div.macro {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px #000 inset;
+    cursor: pointer;
+}
+
+.sanseer-journals .macro.inactive {
+    box-shadow: 0 0 5px #444 inset;
+}
+
+.sanseer-journals .macro:hover {
+    box-shadow: 0 0 10px var(--sanseer-journals-color-shadow-highlight) inset;
 }
