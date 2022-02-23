@@ -2,7 +2,7 @@
     "name": "sanseer-journals",
     "title": "Sanseer Journals",
     "description": "Custom journals for the world of Sanseer",
-    "version": "1.1.0",
+    "version": "1.1.5",
     "author": "variachel",
     "minimumCoreVersion": "9",
     "compatibleCoreVersion": "9",
@@ -36,5 +36,5 @@
     "url": "https://github.com/variachel/sanseer-journals",
     "issues": "https://github.com/variachel/sanseer-journals/issues",
     "manifest": "https://github.com/variachel/sanseer-journals/releases/latest/download/module.json",
-    "download": "https://github.com/variachel/sanseer-journals/archive/v1.1.0.zip"
+    "download": "https://github.com/variachel/sanseer-journals/archive/v1.1.5.zip"
 }
