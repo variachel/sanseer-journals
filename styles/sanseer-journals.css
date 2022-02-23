@@ -1,10 +1,4 @@
-/*
-    Variables for uniform color control
-*/
 body {
-    --sanseer-journals-translucent-accent-color: #D2520B40;
-    --sanseer-journals-base-accent-color: #D2520B;
-
     --sanseer-journals-background-texture-image: url('../textures/journal-bg.png');
     --sanseer-journals-template-header-color: #d9d7c8;
     --sanseer-journals-button-hover-color: #d69e07;
@@ -21,7 +15,28 @@ hr {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(217, 215, 200, 0.75), rgba(0, 0, 0, 0));
-    margin:  1rem;
+    margin: 1rem;
+}
+
+table {
+    font-family: Signika;
+    color: #d9d7c8 !important;
+    border-spacing: 5px;
+    background-color: transparent;
+    text-align: justify;
+}
+
+td {
+    padding: 8px;
+    vertical-align: top;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    width: 50%;
+}
+
+td img {
+    border: 0;
+    margin-left: -5px;
 }
 
 .sanseer-journals div.journal-background {
@@ -60,15 +75,15 @@ hr {
     margin-bottom: 0.5rem;
 }
 
-.sanseer-journals div.journal-image-margin {
-    margin-left: 1rem;
-    margin-top: 1rem;
-}
-
 .sanseer-journals img.journal-image {
     border-radius: 50%;
     border: 2px solid black;
     box-shadow: 0 0 12px #808080;
+}
+
+.sanseer-journals div.journal-image-margin {
+    margin-left: 1rem;
+    margin-top: 1rem;
 }
 
 .sanseer-journals img.journal-image-places {
@@ -78,7 +93,7 @@ hr {
 }
 
 .sanseer-journals div.journal-image-margin-places {
-    margin-left:0.25rem;
+    margin-left: 0.25rem;
     margin-top: 1rem;
 }
 
@@ -104,30 +119,7 @@ hr {
     margin: 0 !important;
 }
 
-
-table {
-    font-family: Signika;
-    color: #d9d7c8 !important;
-    border-spacing: 5px;
-    background-color: transparent;
-    text-align: justify;
-}
-
-td {
-    padding: 8px;
-    vertical-align: top;
-    border: 1px solid #808080;
-    border-radius: 5px;
-    width: 50%;
-}
-
-td img {
-    border: 0;
-    margin-left: -5px;
-}
-
-
-.highlight{
+.sanseer-journals div.highlight {
     background: rgba(0, 0, 0, 0.4);
     padding: 0.5em 1em;
     margin-bottom: 0.5em;
@@ -137,58 +129,64 @@ td img {
     text-shadow: 1px 1px 3px #000;
 }
 
-.highlight::before {
+.sanseer-journals div.highlight::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 0.5em;
 }
 
-.highlight.information{
+.sanseer-journals div.highlight.information {
     background: rgba(47, 80, 132, 0.5) !important;
     border: 1px solid #5c87b9 !important;
 }
 
-.highlight.warning {
+.sanseer-journals div.highlight.information::before {
+    content: "\f05a";
+    padding: 0 5px 0 0;
+}
+
+.sanseer-journals div.highlight.warning {
     background: rgba(214, 150, 0, 0.5) !important;
     border: 1px solid #d69e07 !important;
 }
 
-.highlight.error {
+.sanseer-journals div.highlight.warning::before {
+    content: "\f071";
+    padding: 0 5px 0 0;
+}
+
+.sanseer-journals div.highlight.error {
     background: rgba(105, 0, 8, 0.5) !important;
     border: 1px solid #b85a5d !important;
 }
 
-/*.highlight.information,
-.note.information {
-    background: rgba(47, 80, 132, 0.5) !important;
-    border: 1px solid #5c87b9 !important;
+.sanseer-journals div.highlight.error::before {
+    content: "\f06a";
+    padding: 0 5px 0 0;
 }
 
-.highlight.warning,
-.note.warning {
-    background: rgba(214, 150, 0, 0.5) !important;
-    border: 1px solid #d69e07 !important;
+.sanseer-journals div.highlight.dark {
+    border: 1px solid rgba(192, 192, 192, 0.5) !important;
 }
 
-.highlight.error,
-.note.error {
-    background: rgba(105, 0, 8, 0.5) !important;
-    border: 1px solid #b85a5d !important;
-}*/
-
-.highlight.error::before {
-  content: "\f06a";
-  padding: 0 10px 0 0;
-}
-
-.highlight.dark{
-    border: 1px solid rgba(192,192,192, 0.5) !important;    
-}
-
-.highlight.dark::before{
+.sanseer-journals div.highlight.dark::before {
     content: "\f6cf" !important;
-    padding: 0 10px 0 0;
-    color: #f34d1f !important;
+    padding: 0 5px 0 0;
+    color: #bf2e0a !important;
+}
+
+.sanseer-journals figure.right {
+    clear: right;
+    float: right;
+    max-width: 30%;
+    margin: 0 0 10px 10px;
+}
+
+.sanseer-journals figure.left {
+    clear: left;
+    float: left;
+    max-width: 30%;
+    margin: 0 0 10px 10px;
 }
 
 /* Background  styling of journal dialog */

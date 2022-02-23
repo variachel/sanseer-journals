@@ -4,14 +4,7 @@
     "sanseer-journals.SanseerMaleCharacterJournal": "Sanseer Male Character Journal",
     "sanseer-journals.SanseerPlacesJournal": "Sanseer Places Journal",
     "sanseer-journals.SanseerObjectsJournal": "Sanseer Objects Journal",
-    "sanseer-journals.StyleSection": "Original Custom Styles",
-    "sanseer-journals.DropCap": "Drop Cap",
-    "sanseer-journals.SimpleBlock": "Simple Block",
-    "sanseer-journals.SimpleBlockFloat": "Simple Block Float",
-    "sanseer-journals.RidgedBlock": "Ridged Block",
-    "sanseer-journals.RidgedBlockFloat": "Ridged Block Float",
     "sanseer-journals.JournalStyles": "Sanseer Journal Styles",
-    "sanseer-journals.Background": "Background",
     "sanseer-journals.Base": "Base Wrapper",
     "sanseer-journals.Header": "Journal Header",
     "sanseer-journals.ImageWrapper": "Image Wrapper",
@@ -19,5 +12,9 @@
     "sanseer-journals.CharacterImage": "Character Image",
     "sanseer-journals.CircleImage": "Journal Image",
     "sanseer-journals.HeaderH2": "H2 Header",
-    "sanseer-journals.JournalLink": "Journal Link"
+    "sanseer-journals.JournalLink": "Journal Link",
+    "sanseer-journals.Information": "Information Highlight",
+    "sanseer-journals.Warning": "Warning Highlight",
+    "sanseer-journals.Error": "Error Highlight",
+    "sanseer-journals.Dark": "Dark Highlight"
 }

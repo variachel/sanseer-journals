@@ -23,28 +23,24 @@ Hooks.on("init", (documentTypes) => {
         options.style_formats.push({
             title: game.i18n.localize("sanseer-journals.JournalStyles"),
             items: [{
-                    title: game.i18n.localize("sanseer-journals.Background"),
+                    title: game.i18n.localize("sanseer-journals.Base"),
                     block: 'div',
-                    classes: "journal-background",
+                    classes: "journal-base",
                     wrapper: true
-                },
+                }, 
                 {
                     title: game.i18n.localize("sanseer-journals.Header"),
                     block: 'div',
                     classes: "journal-header",
                     wrapper: true
-                }, {
+                }, 
+                {
                     title: game.i18n.localize("sanseer-journals.Content"),
                     block: 'div',
                     classes: "journal-content",
                     wrapper: true
                 },
-                {
-                    title: game.i18n.localize("sanseer-journals.Base"),
-                    block: 'div',
-                    classes: "journal-base",
-                    wrapper: true
-                },
+
                 {
                     title: game.i18n.localize("sanseer-journals.ImageWrapper"),
                     block: 'div',
@@ -74,7 +70,31 @@ Hooks.on("init", (documentTypes) => {
                     block: 'span',
                     classes: "journal-link",
                     wrapper: false
-                }
+                },
+                {
+                    title: game.i18n.localize("sanseer-journals.Information"),
+                    block: 'div',
+                    classes: "highlight information",
+                    wrapper: false
+                },
+                {
+                    title: game.i18n.localize("sanseer-journals.Warning"),
+                    block: 'div',
+                    classes: "highlight warning",
+                    wrapper: false
+                },
+                {
+                    title: game.i18n.localize("sanseer-journals.Error"),
+                    block: 'div',
+                    classes: "highlight error",
+                    wrapper: false
+                },
+                {
+                    title: game.i18n.localize("sanseer-journals.Dark"),
+                    block: 'div',
+                    classes: "highlight dark",
+                    wrapper: false
+                },
             ]
 
         });
@@ -99,7 +119,7 @@ Hooks.on("init", (documentTypes) => {
         label: game.i18n.localize("sanseer-journals.SanseerMaleCharacterJournal"),
         types: ["base"],
         makeDefault: false
-    });    
+    });
 
     Journal.registerSheet("journals", SanseerPlacesJournal, {
         label: game.i18n.localize("sanseer-journals.SanseerPlacesJournal"),
