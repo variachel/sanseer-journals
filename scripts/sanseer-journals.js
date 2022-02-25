@@ -27,13 +27,13 @@ Hooks.on("init", (documentTypes) => {
                     block: 'div',
                     classes: "journal-base",
                     wrapper: true
-                }, 
+                },
                 {
                     title: game.i18n.localize("sanseer-journals.Header"),
                     block: 'div',
                     classes: "journal-header",
                     wrapper: true
-                }, 
+                },
                 {
                     title: game.i18n.localize("sanseer-journals.Content"),
                     block: 'div',
@@ -69,6 +69,12 @@ Hooks.on("init", (documentTypes) => {
                     title: game.i18n.localize("sanseer-journals.JournalLink"),
                     block: 'span',
                     classes: "journal-link",
+                    wrapper: false
+                },
+                {
+                    title: game.i18n.localize("sanseer-journals.4ColGrid"),
+                    block: 'div',
+                    classes: "grid-container",
                     wrapper: false
                 },
                 {
@@ -134,11 +140,11 @@ Hooks.on("init", (documentTypes) => {
     });
 
     /* 
-    Error occurs without the game.ready check, however, the game is NOT ready at the point of calling the updateDefaultSheets. 
-    The following code therefore is placing an empty object in the sheets. Which, in fact, the call to Journal.registerSheet() already does
+        Error occurs without the game.ready check, however, the game is NOT ready at the point of calling the updateDefaultSheets. 
+        The following code therefore is placing an empty object in the sheets. Which, in fact, the call to Journal.registerSheet() already does
     */
     const settings = game.ready ? game.settings.get("core", "sheetClasses") : {};
     DocumentSheetConfig.updateDefaultSheets(settings);
 
-    log("Sanseer Journals v1.0.0 | Ready.")
+    log("Sanseer Journals v1.2.0 | Ready.")
 });

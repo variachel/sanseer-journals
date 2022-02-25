@@ -5,10 +5,7 @@ export class SanseerEmptyJournal extends JournalSheet {
         this._sheetMode = this.options.sheetMode || this._inferDefaultMode();
         this._textPos = null;
 
-
-        if (!this.object.data.content) {
-            this.object.data.content = this.getTemplateData();
-        }
+        this.handleData();
     }
 
     static get defaultOptions() {
@@ -31,6 +28,14 @@ export class SanseerEmptyJournal extends JournalSheet {
     get title() {
         return this.object.permission ? this.object.name : "";
     }
+
+    handleData() {
+        if (this.object.data.content) {
+            return;
+        }
+        this.object.data.content = this.getTemplateData();
+    }
+
 
     getTemplateData() {
         return '';
