@@ -139,12 +139,12 @@ Hooks.on("init", (documentTypes) => {
         makeDefault: false
     });
 
-    /* 
-        Error occurs without the game.ready check, however, the game is NOT ready at the point of calling the updateDefaultSheets. 
+    /*
+        Error occurs without the game.ready check, however, the game is NOT ready at the point of calling the updateDefaultSheets.
         The following code therefore is placing an empty object in the sheets. Which, in fact, the call to Journal.registerSheet() already does
     */
     const settings = game.ready ? game.settings.get("core", "sheetClasses") : {};
     DocumentSheetConfig.updateDefaultSheets(settings);
 
-    log("Sanseer Journals v1.2.0 | Ready.")
+    log("Sanseer Journals v1.3.0 | Ready.");
 });
