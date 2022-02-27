@@ -1,5 +1,9 @@
 ## Version 1.3.0
 
+Added some more CSS elements to style unordered lists and add tooltips
+
+## Version 1.3.0
+
 Refinement of code and CSS files
 Addition of styles menu item
 Compendium items
