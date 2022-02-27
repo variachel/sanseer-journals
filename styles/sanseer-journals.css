@@ -25,7 +25,7 @@ hr {
     margin: 1rem;
 }
 
-table {
+.sanseer-journals table {
     background-color: transparent;
     border-spacing: 5px;
     color: #d9d7c8;
@@ -33,7 +33,7 @@ table {
     text-align: justify;
 }
 
-td {
+.sanseer-journals td {
     border: 1px solid #808080;
     border-radius: 5px;
     padding: 8px;
@@ -41,12 +41,12 @@ td {
     width: 50%;
 }
 
-td img {
+.sanseer-journals td img {
     border: 0;
     margin-left: -5px;
 }
 
-img {
+.sanseer-journals img {
     border: 0;
 }
 

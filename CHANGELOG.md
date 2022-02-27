@@ -1,3 +1,7 @@
+## Version 1.3.5
+
+Updated CSS to bring some elements into the journals scope only
+
 ## Version 1.3.0
 
 Added some more CSS elements to style unordered lists and add tooltips
