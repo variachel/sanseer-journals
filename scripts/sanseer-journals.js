@@ -60,18 +60,6 @@ Hooks.on("init", (documentTypes) => {
                     wrapper: false
                 },
                 {
-                    title: game.i18n.localize("sanseer-journals.HeaderH2"),
-                    block: 'h2',
-                    classes: "header-h2",
-                    wrapper: false
-                },
-                {
-                    title: game.i18n.localize("sanseer-journals.JournalLink"),
-                    block: 'span',
-                    classes: "journal-link",
-                    wrapper: false
-                },
-                {
                     title: game.i18n.localize("sanseer-journals.4ColGrid"),
                     block: 'div',
                     classes: "grid-container",
@@ -146,5 +134,5 @@ Hooks.on("init", (documentTypes) => {
     const settings = game.ready ? game.settings.get("core", "sheetClasses") : {};
     DocumentSheetConfig.updateDefaultSheets(settings);
 
-    log("Sanseer Journals v1.5.0 | Ready.");
+    log("Sanseer Journals v1.6.0 | Ready.");
 });

@@ -6,6 +6,9 @@ body {
     --sanseer-journals-header-text-color: #696969;
     --sanseer-journals-base-text-color: #bfbfbf;
     --sanseer-journals-color-shadow-highlight: #ff6400;
+
+    font-family: Signika;
+    font-size: 14px;
 }
 
 *,
@@ -15,9 +18,33 @@ body {
 }
 
 .sanseer-journals blockquote {
-    margin: 0.5rem;
+    margin: 1rem 0.5rem 0.5rem;
     background: rgba(214, 150, 0, 0.4);
     border: 1px solid #d69e07;
+    box-shadow: inset 0 0 5px #000000;
+    position: relative;
+    padding-right: 0.3rem;
+    border-radius: 5px;
+}
+
+.sanseer-journals blockquote::after {
+    content: "❝";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: -2px;
+    transform: translate(-50%, -50%);
+    width: 1.2em;
+    height: 1.2em;
+    background: white;
+    box-shadow: 0 4px 5px -1px hsla(0 0% 0% / 20%);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    padding-top: 0.5em;
+    font-size: 18px;
+    font-style: normal;
+    text-indent: 0;
 }
 
 .sanseer-journals hr {
@@ -81,10 +108,6 @@ body {
 }
 
 .sanseer-journals .journal-base {
-    font-family: Signika;
-    text-align: justify;
-    color: #d9d7c8;
-    font-size: 14px;
     margin: 0.5rem;
 }
 
@@ -143,12 +166,40 @@ body {
     color: #bf2e0a;
 }
 
+.sanseer-journals a[href] {
+    color: transparent;
+    background: transparent;
+}
+
+.sanseer-journals a:hover {
+    text-shadow: 0 0 8px #ffffff;
+}
+
+.sanseer-journals a.entity-link,
+a.content-link {
+    background: transparent;
+    border: 0;
+    white-space: nowrap;
+    word-break: break-all;
+    color: #d9d7c8;
+    margin-left: -5px;
+}
+
+.sanseer-journals a.entity-link i::before,
+.sanseer-journals a.content-link i::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f518';
+    color: #d29f28;
+    padding: 0 8px 0 0;
+}
+
 .sanseer-journals div.highlight {
     background: rgba(0, 0, 0, 0.4);
     border: 1px solid #191813;
     border-radius: 5px;
     color: #e4e2d1 !important;
-    margin-bottom: 0.5em;
+    margin: 0.5em auto 0.5em auto;
     padding: 0.5em 1em;
     text-shadow: 1px 1px 3px #000;
 }
@@ -223,8 +274,8 @@ body {
     color: white;
     background: rgba(214, 150, 0, 0.5);
     border: 1px solid #d69e07;
-    margin: 1rem;
-    width: 95%;
+    margin: 5rem;
+    width: calc(100% - 10rem);
     text-shadow: 1px 1px 3px #000;
 }
 
