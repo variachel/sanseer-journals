@@ -1,3 +1,7 @@
+## Version 1.5.0
+
+More CSS updates to blockquote and scope
+
 ## Version 1.3.5
 
 Updated CSS to bring some elements into the journals scope only
