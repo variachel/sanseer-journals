@@ -1,3 +1,9 @@
+## Version 1.6.5
+
+Journal link styling improved (again)
+Added the broken link styling
+Added references to colours
+
 ## Version 1.6.0
 
 Reworked blockquote styling

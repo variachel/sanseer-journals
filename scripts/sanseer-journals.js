@@ -134,5 +134,5 @@ Hooks.on("init", (documentTypes) => {
     const settings = game.ready ? game.settings.get("core", "sheetClasses") : {};
     DocumentSheetConfig.updateDefaultSheets(settings);
 
-    log("Sanseer Journals v1.6.0 | Ready.");
+    log("Sanseer Journals v1.6.5 | Ready.");
 });

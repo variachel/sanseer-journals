@@ -1,11 +1,13 @@
 body {
-    --sanseer-journals-background-texture-image: url('../textures/journal-bg.png');
+    --sanseer-journals-black: #000000;
+    --sanseer-journals-text-shadow: #00000090;
+    --sanseer-journals-image-shadow: #808080;
     --sanseer-journals-template-header-color: #d9d7c8;
     --sanseer-journals-button-hover-color: #d69e07;
     --sanseer-journals-folder-select-bg-color: #5c87b9;
     --sanseer-journals-header-text-color: #696969;
-    --sanseer-journals-base-text-color: #bfbfbf;
-    --sanseer-journals-color-shadow-highlight: #ff6400;
+    --sanseer-hournals-tooltip-background: #29343d;
+    --sanseer-journals-background-texture-image: url('../textures/journal-bg.png');
 
     font-family: Signika;
     font-size: 14px;
@@ -20,8 +22,8 @@ body {
 .sanseer-journals blockquote {
     margin: 1rem 0.5rem 0.5rem;
     background: rgba(214, 150, 0, 0.4);
-    border: 1px solid #d69e07;
-    box-shadow: inset 0 0 5px #000000;
+    border: 1px solid var(--sanseer-journals-button-hover-color);
+    box-shadow: inset 0 0 5px var(--sanseer-journals-black);
     position: relative;
     padding-right: 0.3rem;
     border-radius: 5px;
@@ -57,13 +59,13 @@ body {
 .sanseer-journals table {
     background-color: transparent;
     border-spacing: 5px;
-    color: #d9d7c8;
+    color: var(--sanseer-journals-template-header-color);
     font-family: Signika;
     text-align: justify;
 }
 
 .sanseer-journals td {
-    border: 1px solid #808080;
+    border: 1px solid var(--sanseer-journals-image-shadow);
     border-radius: 5px;
     padding: 8px;
     vertical-align: top;
@@ -86,7 +88,7 @@ body {
     border: 0;
     color: #f34d1f;
     margin: 0;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+    text-shadow: 0 0 8px var(--sanseer-journals-text-shadow);
 }
 
 .sanseer-journals ul {
@@ -94,7 +96,7 @@ body {
 }
 
 .sanseer-journals li {
-    color: #d9d7c8;
+    color: var(--sanseer-journals-template-header-color);
 }
 
 .sanseer-journals ul li::before {
@@ -104,7 +106,7 @@ body {
     color: #b0c4de;
     padding: 0 8px 0 0;
     font-size: 0.7em;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    text-shadow: 0 0 5px var(--sanseer-journals-text-shadow);
 }
 
 .sanseer-journals .journal-base {
@@ -112,28 +114,28 @@ body {
 }
 
 .sanseer-journals .journal-header {
-    color: #d9d7c8;
+    color: var(--sanseer-journals-template-header-color);
     padding: 10px 10px;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid #000;
+    border: 1px solid var(--sanseer-journals-black);
     box-shadow: 0 0 4px #666 inset;
     margin-bottom: 0.5rem;
 }
 
 .sanseer-journals .journal-content {
-    color: #d9d7c8;
+    color: var(--sanseer-journals-template-header-color);
     padding: 3px 10px;
     line-height: 20px;
     background: rgba(0, 0, 0, 0.05);
     border: 1px solid #555;
-    box-shadow: 0 0 2px #000;
+    box-shadow: 0 0 2px var(--sanseer-journals-black);
     margin-bottom: 0.5rem;
 }
 
 .sanseer-journals .journal-image {
     border-radius: 50%;
     border: 2px solid black;
-    box-shadow: 0 0 12px #808080;
+    box-shadow: 0 0 12px var(--sanseer-journals-image-shadow);
 }
 
 .sanseer-journals .journal-image-margin {
@@ -144,7 +146,7 @@ body {
 .sanseer-journals .journal-image-places {
     border-radius: 10px;
     border: 2px solid black;
-    box-shadow: 0 0 12px #808080;
+    box-shadow: 0 0 12px var(--sanseer-journals-image-shadow);
 }
 
 .sanseer-journals .journal-image-margin-places {
@@ -159,7 +161,7 @@ body {
 
 .sanseer-journals .shadow-highlight {
     color: #f34d1f;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+    text-shadow: 0 0 8px var(--sanseer-journals-text-shadow);
 }
 
 .sanseer-journals .journal-link {
@@ -172,7 +174,11 @@ body {
 }
 
 .sanseer-journals a:hover {
-    text-shadow: 0 0 8px #ffffff;
+    text-shadow: 0 0 8px var(--sanseer-journals-template-header-color);
+}
+
+.sanseer-journals a.entity-link.broken:hover {
+    text-shadow: 0 0 8px var(--sanseer-journals-black);
 }
 
 .sanseer-journals a.entity-link,
@@ -181,7 +187,7 @@ a.content-link {
     border: 0;
     white-space: nowrap;
     word-break: break-all;
-    color: #d9d7c8;
+    color: var(--sanseer-journals-template-header-color);
     margin-left: -5px;
 }
 
@@ -191,7 +197,24 @@ a.content-link {
     font-weight: 900;
     content: '\f518';
     color: #d29f28;
-    padding: 0 8px 0 0;
+    padding: 0 1px 0 0;
+    margin-left: 0.3rem;
+}
+
+.sanseer-journals a.entity-link.broken,
+.sanseer-journals a.content-link.broken {
+    background: rgba(255, 0, 0, 0.05);
+    border: 1px dashed red;
+    margin: 0;
+}
+
+.sanseer-journals a.entity-link.broken i::before,
+.sanseer-journals a.content-link.broken i::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f0c1';
+    color: red;
+    padding: 0 1px 0 0;
 }
 
 .sanseer-journals div.highlight {
@@ -212,7 +235,7 @@ a.content-link {
 
 .sanseer-journals .highlight.information {
     background: rgba(47, 80, 132, 0.5);
-    border: 1px solid #5c87b9 !important;
+    border: 1px solid var(--sanseer-journals-folder-select-bg-color) !important;
 }
 
 .sanseer-journals .highlight.information::before {
@@ -222,7 +245,7 @@ a.content-link {
 
 .sanseer-journals div.highlight.warning {
     background: rgba(214, 150, 0, 0.5);
-    border: 1px solid #d69e07 !important;
+    border: 1px solid var(--sanseer-journals-button-hover-color) !important;
 }
 
 .sanseer-journals div.highlight.warning::before {
@@ -273,10 +296,10 @@ a.content-link {
 .sanseer-journals button {
     color: white;
     background: rgba(214, 150, 0, 0.5);
-    border: 1px solid #d69e07;
+    border: 1px solid var(--sanseer-journals-button-hover-color);
     margin: 5rem;
     width: calc(100% - 10rem);
-    text-shadow: 1px 1px 3px #000;
+    text-shadow: 1px 1px 3px var(--sanseer-journals-black);
 }
 
 .sanseer-journals button:hover {
@@ -285,19 +308,19 @@ a.content-link {
 
 .sanseer-journals .window-content select[name="folder"] {
     background: var(--sanseer-journals-template-header-color);
-    box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px var(--sanseer-journals-black);
     font-family: Tiamat;
     font-size: 22px;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
-    color: #696969;
+    color: var(--sanseer-journals-header-text-color);
 }
 
 .sanseer-journals .window-content input[type="text"] {
     background: var(--sanseer-journals-template-header-color);
-    box-shadow: inset 0 0 10px #000000;
-    text-shadow: 1px 1px 3px #000;
+    box-shadow: inset 0 0 10px var(--sanseer-journals-black);
+    text-shadow: 1px 1px 3px var(--sanseer-journals-black);
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
-    color: #696969;
+    color: var(--sanseer-journals-header-text-color);
     font-family: Signika;
 }
 
@@ -308,7 +331,7 @@ a.content-link {
 
 .sanseer-journals .editor .tox-edit-area {
     background-color: var(--sanseer-journals-template-header-color);
-    box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px var(--sanseer-journals-black);
     color: var(--sanseer-journals-header-text-color);
     padding: 10px;
 }
@@ -321,7 +344,7 @@ a.content-link {
 
 .sanseer-journals .editor .tox-toolbar__group button {
     background: rgba(47, 80, 132, 0.5) !important;
-    border: 1px solid #5c87b9 !important;
+    border: 1px solid var(--sanseer-journals-folder-select-bg-color) !important;
     margin: 0.25rem;
 }
 
@@ -377,8 +400,8 @@ a.content-link {
     display: block;
     position: absolute;
     padding: 5px;
-    background: #29343d;
-    color: #d9d7c8;
+    background: var(--sanseer-hournals-tooltip-background);
+    color: var(--sanseer-journals-template-header-color);
     border-radius: 5px;
     font-size: 1em;
     white-space: nowrap;
@@ -409,8 +432,8 @@ a.content-link {
     width: 25px;
     height: 25px;
     border-radius: 5px;
-    border: 1px solid #ffffff;
-    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
     background-image: linear-gradient(to top left, #ddd 0%, #fff 100%);
     text-align: center;
     transform-origin: center;
@@ -426,7 +449,7 @@ a.content-link {
 
 .sanseer-journals .journal-hint {
     position: relative;
-    color: #d9d7c8;
+    color: var(--sanseer-journals-template-header-color);
 }
 
 .sanseer-journals .journal-hint::before {
@@ -442,7 +465,7 @@ a.content-link {
     z-index: 1;
     padding: 0.25rem 1rem;
     border-radius: 5px;
-    background: #29343d;
+    background: var(--sanseer-hournals-tooltip-background);
     opacity: 0;
     color: #cedfe9;
     font-size: 0.875rem;
@@ -459,7 +482,7 @@ a.content-link {
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid #29343d;
+    border-top: 10px solid var(--sanseer-hournals-tooltip-background);
 }
 
 .sanseer-journals .journal-hint:hover .tooltip,
