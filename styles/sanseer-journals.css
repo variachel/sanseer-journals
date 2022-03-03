@@ -182,7 +182,7 @@ body {
 }
 
 .sanseer-journals a.entity-link,
-a.content-link {
+.sanseer-journals a.content-link {
     background: transparent;
     border: 0;
     white-space: nowrap;

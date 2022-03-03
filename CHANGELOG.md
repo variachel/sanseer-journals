@@ -1,3 +1,7 @@
+## Version 1.6.6
+
+Fixed issue with content link being in scope of main application
+
 ## Version 1.6.5
 
 Journal link styling improved (again)
