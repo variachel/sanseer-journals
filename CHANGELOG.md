@@ -1,3 +1,8 @@
+## Version 1.7.0
+
+Added styling specific to my personal game
+Fixed issue with last update relating to the secret styling
+
 ## Version 1.6.6
 
 Fixed issue with content link being in scope of main application
