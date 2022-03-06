@@ -1,6 +1,11 @@
 # Sanseer Journals
 Styling for Sanseer Journals
 
+<div>
+	<img src="https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https%3A%2F%2Fgithub.com%2Fvariachel%2Fsanseer-journals%2Freleases%2Flatest%2Fdownload%2Fmodule.json" alt="">
+	<img src="https://img.shields.io/endpoint?url=https%3A%2F%2Ffoundryshields.com%2Fsystem%3FnameType%3Dfull%26url%3Dhttps%3A%2F%2Fimg.shields.io%2Fendpoint%3Furl%3Dhttps%3A%2F%2Ffoundryshields.com%2Fversion%3Furl%3Dhttps%253A%252F%252Fgithub.com%252Fvariachel%252Fsanseer-journals%252Freleases%252Flatest%252Fdownload%252Fmodule.json" alt="">
+</div>
+
 With respect to FairStrides Custom Journal on which it is based:
 
 [FVTT-Custom-Journal-Theming](https://github.com/Fair-Strides/FVTT-Custom-Journal-Theming).
