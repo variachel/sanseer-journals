@@ -25,6 +25,7 @@ It is primarily for my own personal use.
 	<img src="https://github.com/variachel/sanseer-journals/raw/main/textures/male-character-template.jpg " alt="male-char" width="400"/>
 	<img src="https://github.com/variachel/sanseer-journals/raw/main/textures/editor.jpg " alt="editor" width="400"/>
 	<img src="https://github.com/variachel/sanseer-journals/raw/main/textures/image-view.jpg " alt="image-view" width="400"/>
+	<img src="https://github.com/variachel/sanseer-journals/raw/main/textures/link-styling.jpg " alt="link-styling" width="400"/>
 </div>
 
 ***
