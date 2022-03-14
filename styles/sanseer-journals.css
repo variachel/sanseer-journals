@@ -373,14 +373,19 @@ body {
 }
 
 .sanseer-journals div .grid-container {
-    display: inline-grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: auto;
-    row-gap: 20px;
-    column-gap: 10px;
-    justify-items: center;
-    margin: 0.25rem 0;
-    width: 95% !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 0.125rem;
+}
+
+.sanseer-journals div.grid-container.figure {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.sanseer-journals div.grid-container.figure img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
 }
 
 .sanseer-journals div.macro {

@@ -1,3 +1,7 @@
+## Version 1.7.5
+
+Updated the grid to be more responsive
+
 ## Version 1.7.0
 
 Added styling specific to my personal game
